@@ -1,0 +1,36 @@
+@mixin font-face($font-family, $font-weight, $font-style, $file-name) {
+    font-family: $font-family;
+    font-display: swap;
+    src: url('../fonts/#{$font-family}/#{$file-name}.ttf');
+    src: url('../fonts/#{$font-family}/#{$file-name}.ttf') format('truetype');
+    font-weight: $font-weight;
+    font-style: $font-style;
+}
+
+@font-face {
+    @include font-face($typography-family-secondary, normal, normal, 'Roboto-Normal');
+}
+
+@font-face {
+    @include font-face($typography-family-secondary, normal, italic, 'Roboto-Italic');
+}
+
+@font-face {
+    @include font-face($typography-family-secondary, bold, normal, 'Roboto-Bold');
+}
+
+@font-face {
+    @include font-face($typography-family-secondary, bold, italic, 'Roboto-BoldItalic');
+}
+
+@font-face {
+    @include font-face($typography-family-primary, normal, normal, 'Merriweather-Normal');
+}
+
+@font-face {
+    @include font-face($typography-family-primary, bold, normal, 'Merriweather-Bold');
+}
+
+@font-face {
+    @include font-face($typography-family-primary, 300, italic, 'Merriweather-Light');
+}

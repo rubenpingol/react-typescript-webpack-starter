@@ -1,0 +1,5 @@
+body {
+    @include font-base();
+    font-size: 16px;
+    color: var(--typography-color-base);
+}

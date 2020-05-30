@@ -1,0 +1,5 @@
+
+@mixin font-base() {
+    font-family: var(--typography-family-primary);
+    font-size: 14px;
+}
